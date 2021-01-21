@@ -1,6 +1,10 @@
 name: Sauce Pipeline Browser Tests
 
-on: [push]
+on:
+  pull_request:
+  push:
+    branches:
+      - master
 
 env:
   SAUCE_ACCESS_KEY: ${{secrets.SAUCE_ACCESS_KEY}}
