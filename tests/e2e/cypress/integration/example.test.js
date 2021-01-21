@@ -6,6 +6,7 @@ const testName = 'testcafe test'
 test(testName, async t => {
     await t
         .typeText('#developer-name', 'devx')
+        .click('#tried-test-cafe')
         .click('#submit-button')
         .expect(Selector('#article-header').innerText).eql('Thank you, devx!');
 });
