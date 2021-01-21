@@ -13,7 +13,7 @@ jobs:
         run: |
           cd ./solutions/02_Setup/cypress
           npm i
-          npx saucectl run
+          npx saucectl run -c ./sauce/config.yml
         env:
           BUILD_ID: ${{ github.run_id }}
           BUILD_ENV: GitHub Actions
