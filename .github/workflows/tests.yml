@@ -31,7 +31,7 @@ jobs:
         run: |
           ls -l tests
           ls -l tests/e2e/cypress/integration
-          ./saucectl run -c ./.sauce/cypress.yml
+          ./saucectl run
         env:
           BUILD_ID: ${{ github.run_id }}
           BUILD_ENV: GitHub Actions
