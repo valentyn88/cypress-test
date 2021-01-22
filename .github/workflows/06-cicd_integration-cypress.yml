@@ -14,6 +14,7 @@ jobs:
           cd ./solutions/02_Setup/cypress
           npm i
           cd ../
+          sudo chmod -R 777 tests/
           npx saucectl run -c .sauce/config.yml
         env:
           BUILD_ID: ${{ github.run_id }}
