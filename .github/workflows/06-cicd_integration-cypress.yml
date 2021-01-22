@@ -21,6 +21,7 @@ jobs:
           cd ../
           sudo chmod -R 777 tests/
           npx saucectl run -c .sauce/config.yml
+          echo $?
         env:
           BUILD_ID: ${{ github.run_id }}
           BUILD_ENV: GitHub Actions
